@@ -114,7 +114,7 @@ void draw() {
       e=floor(random(33, 420));
       if(c<21){
       gameState=game_lose;     
-      c=209;
+      c=58;
       }
     }
     if(590+fighterX+30>d && 590+fighterX+30<d+61 && 300+fighterY+45>e && 300+fighterY+45<e+61){
@@ -123,7 +123,7 @@ void draw() {
       e=floor(random(33, 420));
       if(c<21){
       gameState=game_lose;
-      c=209;
+      c=58;
       }
     }
     
