@@ -62,13 +62,6 @@ void draw() {
     }
     
     
-    //hp
-    fill(#ff0000);
-    rectMode(CORNERS);
-    rect(4, 4, c, 20);
-    image(hp, 0, 0);
-    
-    
     //fighter
     image(fighter, 590+fighterX, 300+fighterY);
     if (upPressed) {
@@ -105,8 +98,13 @@ void draw() {
     image(enemy, d, e);
     d+=speed_enemy;
     d%=640;
-    
-    
+        
+    //hp
+    fill(#ff0000);
+    rectMode(CORNERS);
+    rect(4, 4, c, 20);
+    image(hp, 0, 0);
+  
     //damage
     if(590+fighterX+30>d && 590+fighterX+30<d+61 && 300+fighterY>e && 300+fighterY<e+61){
       c-=38;
